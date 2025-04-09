@@ -6,13 +6,16 @@ import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
 import edu.loira.tienda.Tienda.model.Cliente;
-import repositories.IClientesRepository;
+import edu.loira.tienda.Tienda.repositories.IClientesRepository;
+import edu.loira.tienda.Tienda.repositories.IProductosRepository;
 
 @SpringBootApplication
 public class TiendaApplication implements CommandLineRunner {
 
 		@Autowired
 		private IClientesRepository clienteRepo;
+		@Autowired
+		private IProductosRepository productoRepo;
 
 	public static void main(String[] args) {
 		SpringApplication.run(TiendaApplication.class, args);
@@ -21,6 +24,7 @@ public class TiendaApplication implements CommandLineRunner {
 	@Override
 	public void run(String... args) throws Exception {
 		clienteRepo.save(new Cliente( "Fermin", "Trujillo", "654321987", "trujillo@gmail.com", "admin"));
+		
 	}
 
 }
