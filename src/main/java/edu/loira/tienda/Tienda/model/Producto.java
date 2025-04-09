@@ -86,6 +86,12 @@ public class Producto {
 
     public Producto() {
     }
+    public Producto(String nombre, Categoria categoria, String descripcion, double precio) {
+        this.nombre = nombre;
+        this.categoria = categoria;
+        this.descripcion = descripcion;
+        this.precio = precio;
+    }
 
 
 
