@@ -38,7 +38,7 @@ INSERT INTO `productos` (`categoria`, `descripcion`, `nombre`, `precio`) VALUES
 --       debido a las inserciones anteriores y la configuración AUTO_INCREMENT.
 --       Ajusta los IDs si tus valores AUTO_INCREMENT iniciales son diferentes.
 -- --------------------------------------------------------
-INSERT INTO `facturas` (`cantidad`, `fecha`, `modo_Pago`, `id_cliente`, `id_producto`) VALUES
+INSERT INTO `facturas` (`cantidad`, `fecha`, `modo_pago`, `id_cliente`, `id_producto`) VALUES
 (1, '2025-04-01', 'TARJETA', 1, 1),       -- Juan compra Camiseta Básica
 (2, '2025-04-01', 'EFECTIVO', 2, 2),      -- María compra 2 Vaqueros Skinny
 (1, '2025-04-02', 'BIZUM', 3, 3),         -- Pedro compra Zapatillas Running

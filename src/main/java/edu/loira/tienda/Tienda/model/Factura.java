@@ -35,7 +35,7 @@ public class Factura {
     @Column(name = "fecha", nullable = false)
     private LocalDate fecha;
     @Enumerated(EnumType.STRING)
-    @Column(name = "modo_Pago", nullable = false, columnDefinition = "ENUM('EFECTIVO', 'TARJETA_CREDITO', 'PAYPAL', 'Bizum')")
+    @Column(name = "modo_pago", nullable = false, columnDefinition = "ENUM('EFECTIVO', 'TARJETA', 'TRANSFERENCIA', 'BIZUM')")
     private ModoPago modoPago;
     public Long getId_Factura() {
         return id_Factura;
